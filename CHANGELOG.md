@@ -5,7 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - Unreleased
+## [0.1.1] - 2026-05-22
+
+### Fixed
+
+- `admin.transfer_config` now treats the response as raw bytes (the server returns
+  binary config data, not JSON).
+
+## [0.1.0] - Not Publically Released
 
 ### Added
 
@@ -29,8 +36,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   and a tag-driven PyPI publish workflow using OIDC trusted publishing.
 - Optional live integration scripts and a manual GitHub Actions workflow for
   server-side verification (credentials via environment variables only).
-
-### Fixed
-
-- `admin.transfer_config` now treats the response as raw bytes (the server returns
-  binary config data, not JSON).
